@@ -15,8 +15,11 @@
     "homepage": "https://github.com/hasinhayder/tutor-sslcommerz",
     "autoload": {
         "psr-4": {
-            "Payments\\Sslcommerz\\": "payments/",
-            "TSPay\\": "integration/"
+            "Payments\\Prodamus\\": "payments/",
+            "TPPay\\": "integration/"
         }
+    }
+    ,"config": {
+        "disable-tls": true
     }
 }

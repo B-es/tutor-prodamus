@@ -4,25 +4,25 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit89023a050ad48aa51d80081e26c765cc
+class ComposerStaticInit92e72a8205e242b8ef8337dc4ea65f98
 {
     public static $prefixLengthsPsr4 = array (
-        'T' =>
+        'T' => 
         array (
-            'TSPay\\' => 6,
+            'TPPay\\' => 6,
         ),
-        'P' =>
+        'P' => 
         array (
-            'Payments\\Sslcommerz\\' => 20,
+            'Payments\\Prodamus\\' => 18,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'TSPay\\' =>
+        'TPPay\\' => 
         array (
             0 => __DIR__ . '/../..' . '/integration',
         ),
-        'Payments\\Sslcommerz\\' =>
+        'Payments\\Prodamus\\' => 
         array (
             0 => __DIR__ . '/../..' . '/payments',
         ),
@@ -35,9 +35,9 @@ class ComposerStaticInit89023a050ad48aa51d80081e26c765cc
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit89023a050ad48aa51d80081e26c765cc::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit89023a050ad48aa51d80081e26c765cc::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit89023a050ad48aa51d80081e26c765cc::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit92e72a8205e242b8ef8337dc4ea65f98::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit92e72a8205e242b8ef8337dc4ea65f98::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit92e72a8205e242b8ef8337dc4ea65f98::$classMap;
 
         }, null, ClassLoader::class);
     }
